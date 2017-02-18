@@ -6,13 +6,19 @@ var path = require('path')
 // homepage
 router.get('/', function(req, res) {
 	console.log('Home Page');
-	res.render('pages/index')
+	res.render('pages/home')
 });
 
 // about page
 router.get('/about', function(req, res) {
 	console.log('About Page');
-	res.render('pages/about')
+	var users = [
+		{name: 'Nicolas', email: 'nicolas@email.com', avatar: 'https://www.placecage.com/150/150'},
+		{name: 'Bill', email: 'bill@email.com', avatar: 'http://www.fillmurray.com/150/150'},
+		{name: 'Steven', email: 'steven@email.com', avatar: 'http://www.stevensegallery.com/150/150'},
+		{name: 'Kitten', email: 'kitten@email.com', avatar: 'http://www.placekitten.com/150/150'}
+	];
+	res.render('pages/about', {users: users})
 });
 
 // contact page

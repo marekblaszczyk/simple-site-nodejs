@@ -1,0 +1,16 @@
+<%- contentFor('section') %>
+About page
+
+<%- contentFor('jumbotron') %>
+<h1>About page</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula fermentum lorem ac posuere. Pellentesque pretium urna ac condimentum convallis. Praesent id fringilla leo, vel pulvinar nisl. Fusce nisl mi, euismod sed mi euismod, tempus lacinia mauris. Morbi sed sem non ligula aliquet vehicula ac quis nibh. Duis non aliquet libero. Sed enim quam, hendrerit non ultricies id, tempor et tortor. Mauris tincidunt nisl in libero elementum efficitur. Praesent at hendrerit eros. Aliquam nulla elit, molestie quis orci ut, efficitur molestie lectus. Nullam quis ipsum libero. Maecenas congue aliquet turpis ac vestibulum. Aenean tristique pharetra suscipit. Vestibulum mi nibh, dapibus ut auctor id, ullamcorper sed orci. Mauris egestas enim a orci tristique, at congue felis sodales. Curabitur convallis ipsum at semper eleifend.</p>
+<p>Pellentesque ornare interdum massa, eget tempus magna lacinia a. Duis blandit libero ut accumsan ultrices. Morbi imperdiet sem id est rutrum pulvinar id nec ex. Morbi posuere sollicitudin leo, non faucibus eros blandit nec. Maecenas eu condimentum diam, sit amet ullamcorper nisl. Pellentesque interdum mi et magna aliquam, nec bibendum quam pellentesque. Suspendisse cursus turpis vel nulla pulvinar malesuada. Vestibulum semper est ac egestas tristique. Maecenas posuere elit et metus vestibulum convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<h2>Our team</h2>
+<div class="row">
+	<% for (user of users) { %>
+		<div class="col-sm-3">
+			<h3><%= user.name %></h3>
+			<img src="<%= user.avatar %>" alt="" class="img-responsive">
+		</div>
+	<% } %>
+</div>

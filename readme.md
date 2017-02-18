@@ -15,3 +15,6 @@
 
 * Start app:
 	`nodemon server.js`
+
+* See:
+	`http://localhost:8080`

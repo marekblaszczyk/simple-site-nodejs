@@ -10,7 +10,7 @@ app.use('/', router)
 
 // use ejs and express Layouts
 app.set('view engine', 'ejs');
-app/use(expressLayouts);
+app.use(expressLayouts);
 
 // set static files
 app.use(express.static(__dirname + '/public'));

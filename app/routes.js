@@ -6,17 +6,22 @@ var path = require('path')
 // homepage
 router.get('/', function(req, res) {
 	console.log('Home Page');
-	res.sendFile(path.join(__dirname, '../index.html'))
+	res.render('pages/index')
 });
 
 // about page
 router.get('/about', function(req, res) {
-	res.send('About Page');
-		res.sendFile(path.join(__dirname, '../about.html'))
+	console.log('About Page');
+	res.render('pages/about')
 });
 
 // contact page
-router.get('/content');
-router.post('/content');
+router.get('/contact', function(req, res) {
+	console.log('Contact Page')
+	res.render('pages/contact')
+});
+
+router.post('/content', function(req, res){
+});
 
 module.exports = router;

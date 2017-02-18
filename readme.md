@@ -4,7 +4,7 @@
 * nodemon
 * express
 * ejs
-* body-parset
+* body-parser
 
 # Instalation:
 

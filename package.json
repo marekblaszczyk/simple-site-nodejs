@@ -1,0 +1,17 @@
+{
+  "name": "simple-site-nodejs",
+  "version": "1.0.0",
+  "description": "Simple site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marek Błaszczyk",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "express-ejs-layouts": "^2.2.0",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -27,7 +27,9 @@ router.get('/contact', function(req, res) {
 	res.render('pages/contact')
 });
 
-router.post('/content', function(req, res){
+router.post('/contact', function(req, res) {
+	console.log(req.body.message);
+	res.send('Thanks for contact us, ' + req.body.name)
 });
 
 module.exports = router;
